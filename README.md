@@ -1,1 +1,147 @@
 # webible
+World English Bible Assistant + King James Bible Assistant
+   +Douay Rheims Assistant + Vulgate.
+-----------------------------------
+
+To get the latest GBF format files of the WEB translation:
+
+   Linkname: Download webgbf.zip
+      URL: http://www.ebible.org/bible/web/webgbf.zip
+
+To get the  GBF format file of the KJV:
+
+   Linkname: General Bible Format
+        URL: http://www.ebible.org/bible/kjv/kjvgbf.zip
+
+To get the  GBF format file of the Douay
+
+        URL: http://www.geocities.com/mrklingon/drv.zip
+
+
+-----------------------------------
+
+Simple tool to read and use the World English Bible, now modified
+to use the King James Bible, Douay and Vulgate also!
+
+
+Command Line mode:
+
+READ BOOK:
+
+webible  book|book-number [chapter [verse  [end-verse] ] ]
+
+kjbible  book|book-number [chapter [verse  [end-verse] ] ]
+
+drbible  book|book-number [chapter [verse  [end-verse] ] ]
+
+For example:
+
+	webible Isaiah 7 14 15
+
+Looking for Isaiah 
+7:14    weary my God also? | Therefore the Lord himself will give you a sign:
+7:14    behold, a virgin shall conceive, and bear a son, and shall call his name
+7:15    Immanuel. | Butter and honey shall he eat, when he knows to refuse the
+
+BREAK UP WEB.GBF File : (requires you go to WEB page
+http://www.ebible.org and get the most recent zip file, unzip it in
+the directory in which webible is.)
+
+./webible SPLIT
+Directory already exists
+making >web.dir/1.web
+making >web.dir/2.web
+making >web.dir/3.web
+making >web.dir/4.web......
+making >web.dir/66.web......
+
+	  {this breaks the text into 66 unique files)
+
+The same command works for the KJV.GBF file (download at 
+        URL: http://www.ebible.org/bible/kjv/kjvgbf.zip)
+
+./kjbible SPLIT
+making >kjv.dir/1.web
+making >kjv.dir/2.web
+making >kjv.dir/3.web....
+making >kjv.dir/81.web......
+
+	  {this breaks the text into 81 unique files; includes
+		the Apocyrpha)
+
+The Douay and Vulgate are already split, just unzip the drv.zip or vul.zip file
+in the directory you put the Bible programs.
+
+INTERACTIVE mode:  (examples for webible work for kjbible and drbible)
+============
+$ webible
+
+WEBible : World English Bible Assistant
+
+webible - print portions of the WEB Bible
+
+Usage:
+	book [chapter [verse  [end-verse] ] ]
+	>filename - write output to filename
+	!command  - execute command
+	web       - Switch to WEB translation
+	kjv       - Switch to KJV translation
+	drv       - Switch to DRV translation
+	lat       - Switch to DRV translation
+	*quit     - end program
+	*wrap 99  - set wrap at column 99 (set to large number to turn off
+	?         - this summary
+	*books    - list books
+
+
+WEBible Assistant for the World English Bible - 4.0
+Joel Peter Anderson, January 1st, 2002
+WEBible> 
+
+=====================
+
+You can use this to display any passage.  If you direct output to a file
+then you can save portions to edit, review or print the selections.  One
+handy feature is to write some pieces to a file, then call them up in an 
+editor:
+
+$ ./webible
+WEBible : World English Bible Assistant
+
+./webible - print portions of the WEB Bible
+
+Usage:
+	book [chapter [verse  [end-verse] ] ]
+	>filename - write output to filename
+	!command  - execute command
+	*quit     - end program
+	?         - this summary
+
+WEBible Assistant for the World English Bible - 1.0
+Joel Peter Anderson, February 19, 1999
+
+WEBible> >messiah.txt          [Start writing file "messiah.txt"]
+
+WEBible> Isaiah 7 13 15        [view Isaiah 7:13-15]
+
+Looking for Isaiah 
+7:13    I will not ask, neither will I tempt Yahweh. | He said, “Listen now,
+7:13    house of David: Is it a small thing for you to weary men, that you will
+7:14    weary my God also? | Therefore the Lord himself will give you a sign:
+7:14    behold, a virgin shall conceive, and bear a son, and shall call his name
+7:15    Immanuel. | Butter and honey shall he eat, when he knows to refuse the
+
+WEBible> Genesis 3 14 16       [view Genesis 3:14-16]
+Looking for Genesis 
+3:14    | Yahweh God said to the serpent, “Because you have done this, cursed are
+3:14    you above all cattle, and above every animal of the field. On your belly
+3:15    shall you go, and you shall eat dust all the days of your life. | I will
+3:15    put enmity between you and the woman, and between your offspring and her
+3:15    offspring. He will bruise your head, and you will bruise his heel.”
+3:16    | To the woman he said, “I will greatly multiply your pain in childbirth.
+3:16    In pain you will bring forth children. Your desire will be for your husband,
+3:16    and he will rule over you.”
+
+WEBible> !write messiah.txt    [view file messiah.txt using "write"]
+WEBible> *quit                 [end program]
+
