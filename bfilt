@@ -1,0 +1,1 @@
+sed 's/[0-9]*:[0-9]*//' |sed  's/Looking for//'| sed 's/|//g'|sed 's/\[Running KLBible  Klingon Language Bible Assistant \]//g'|sed 's/\o222/`/g'|sed 's/\o224//g'|sed 's/\o223//g'
