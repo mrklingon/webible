@@ -27,7 +27,7 @@ open KX,">$SUBJ-klingon-out.html";
 open MX,">$SUBJ-mandoa-out.html";
 
 
-while (<>){
+while (<VRS>){
     chomp;
     printf KX "<b>$_</b>\n";
     printf MX "<b>$_</b>\n";
