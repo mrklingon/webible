@@ -89,7 +89,7 @@ INTERACTIVE mode:
     WEBible> Isaiah 7 13 15        [view Isaiah 7:13-15]
     
     Looking for Isaiah 
-    7:13    I will not ask, neither will I tempt Yahweh. | He said, “Listen now,
+    7:13    I will not ask, neither will I tempt Yahweh. | He said, â€œListen now,
     7:13    house of David: Is it a small thing for you to weary men, that you will
     7:14    weary my God also? | Therefore the Lord himself will give you a sign:
     7:14    behold, a virgin shall conceive, and bear a son, and shall call his name
@@ -97,15 +97,33 @@ INTERACTIVE mode:
     
     WEBible> Genesis 3 14 16       [view Genesis 3:14-16]
     Looking for Genesis 
-    3:14    | Yahweh God said to the serpent, “Because you have done this, cursed are
+    3:14    | Yahweh God said to the serpent, â€œBecause you have done this, cursed are
     3:14    you above all cattle, and above every animal of the field. On your belly
     3:15    shall you go, and you shall eat dust all the days of your life. | I will
     3:15    put enmity between you and the woman, and between your offspring and her
-    3:15    offspring. He will bruise your head, and you will bruise his heel.”
-    3:16    | To the woman he said, “I will greatly multiply your pain in childbirth.
+    3:15    offspring. He will bruise your head, and you will bruise his heel.â€
+    3:16    | To the woman he said, â€œI will greatly multiply your pain in childbirth.
     3:16    In pain you will bring forth children. Your desire will be for your husband,
-    3:16    and he will rule over you.”
+    3:16    and he will rule over you.â€
     
     WEBible> !write messiah.txt    [view file messiah.txt using "write"]
     WEBible> *quit                 [end program]
+
+
+BBuild.pl
+---------------------------
+BBuild - build Bible podcasts.
+
+Usage: BBuild subject verse-list-file
+
+Script generates two files:
+
+   subject-klingon-out.html   coded html for A Klingon Word from the Word
+   subject-mandoa-out.html coded html for A Mando'a Word for a Warrior.
+   
+   html files can be edited for lead-in sentance, prior to recording and then pasted into Blogger entry for posting.
+   
+bfilt
+----------
+simple sed script used by BBuild.pl to strip extraneous output from webible/klbible/mndbible output.
 
